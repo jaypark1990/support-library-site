@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peptide Library Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the Peptide Library iOS app.">
+  <link rel="canonical" href="https://jaypark1990.github.io/support-library-site/privacy/">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="../">Peptide Library</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../support/">Support</a></li>
+          <li><a href="./" aria-current="page">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap">
+    <h1>Peptide Library Privacy Policy</h1>
+    <p class="meta">Effective date: 3 September 2026</p>
+    <p>This policy describes how the Peptide Library iOS app handles information. It is based on the current shipping code. It is not legal advice and does not claim certifications (including HIPAA, GDPR, or FDA approval of the app).</p>
+
+    <h2>Information We Collect</h2>
+    <p>The shipping app does not send journal entries, check-ins, interests, or account data to the developer. There is no production identity server, no analytics SDK, no advertising SDK, no crash-reporting SDK, and no CloudKit entitlement. The app does not make network requests to a Peptide Library backend.</p>
+    <p>The app does store information <strong>on your iPhone</strong>, including:</p>
+    <ul>
+      <li>Onboarding and language preferences</li>
+      <li>Research interests you choose</li>
+      <li>Saved and recently viewed library items</li>
+      <li>Personal journal titles, notes, check-ins, optional observation details, and optional measurement labels/values you enter</li>
+      <li>Whether Face ID lock and journal-title-in-notifications are enabled</li>
+    </ul>
+    <p>That on-device store uses Apple’s UserDefaults and SwiftData APIs. The app’s privacy manifest states that the app does not track, lists no data types collected off-device, and declares UserDefaults access for on-device preferences.</p>
+    <p>The shipping UI does not require or offer an account. Sign-in scaffolding exists only for tests and a possible future service; it is not enabled in the current production configuration.</p>
+
+    <h2>How Information Is Used</h2>
+    <p>On-device information is used only to operate the app on that iPhone: remember interests, show saved research, keep your journal, schedule optional local check-in reminders, and optionally lock the journal with the device owner credential (Face ID / passcode via LocalAuthentication).</p>
+    <p>If you turn on “include name in notifications,” the local notification body may include the journal title. Those notifications are delivered by iOS on the device; they are not uploaded to the developer.</p>
+
+    <h2>Data Storage</h2>
+    <p>Journal, check-in, and preference data stay in the app’s local store on your iPhone. There is no CloudKit sync in the current configuration.</p>
+    <p>If you back up this iPhone (for example with iCloud Backup or a computer backup), Apple’s backup may include app data. That copy is under your Apple ID / backup settings, not a Peptide Library server.</p>
+    <p>You can export a journal JSON file from Settings and share it with apps you choose. You can delete local journal data in Settings.</p>
+
+    <h2>Data Sharing</h2>
+    <p>The current app does not transmit journal or check-in content to the developer or to third-party analytics, advertising, or crash services, because those services are not included and no app network client is used.</p>
+    <p>If you export or share a file, or if you open an external research link, you choose that destination. We do not operate a social feed, messaging, or public journal sharing.</p>
+
+    <h2>Analytics and Tracking</h2>
+    <p>The iOS app does not include analytics or tracking SDKs. The privacy manifest sets tracking to false and lists no tracking domains. The app does not use App Tracking Transparency because it does not track across apps or websites for advertising.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>The iOS app does not embed Firebase, Supabase, Sentry, Crashlytics, Mixpanel, Amplitude, PostHog, RevenueCat, or similar third-party packages. There are no Swift Package Manager dependencies in the Xcode project.</p>
+    <p>This website is hosted by GitHub Pages. GitHub may process technical data (such as IP address) for people who visit these pages, under GitHub’s own terms and privacy policy. This website does not load a separate analytics script.</p>
+
+    <h2>External Research Sources / Links</h2>
+    <p>Research pages in the app may open source links in Safari, including sites such as Drugs@FDA, DailyMed, PubMed, ClinicalTrials.gov, and the EMA website. Those organizations are not affiliated with Peptide Library and do not endorse the app. If you follow a link, you leave the app’s local content and that site’s privacy practices apply.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Peptide Library is an educational research reference. It is not directed at collecting personal information from children, and the shipping app has no account or profile system. The intended App Store age rating is 17+ because the library discusses medicines and investigational research.</p>
+
+    <h2>Security</h2>
+    <p>Information is stored in the iOS app sandbox. Optional Face ID lock uses the system LocalAuthentication prompt on this device. We do not claim additional certifications.</p>
+
+    <h2>Your Choices</h2>
+    <ul>
+      <li>Use the app without creating an account</li>
+      <li>Leave interests unselected</li>
+      <li>Keep a journal or not; delete it in Settings</li>
+      <li>Enable or disable Face ID lock and check-in reminders</li>
+      <li>Choose whether notification text includes the journal title</li>
+      <li>Export a copy, or not</li>
+    </ul>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>If the app’s data practices change (for example if a hosted account service is turned on), this policy should be updated and the effective date changed. The code, not this page, is the authority for what the app does.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="https://github.com/jaypark1990/support-library-site/issues">github.com/jaypark1990/support-library-site/issues</a>. Please do not paste journal contents into an issue.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Peptide Library</span>
+      <span><a href="../">Home</a> · <a href="../support/">Support</a></span>
+    </div>
+  </footer>
+</body>
+</html>
